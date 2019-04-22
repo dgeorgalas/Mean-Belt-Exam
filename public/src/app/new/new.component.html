@@ -1,0 +1,43 @@
+<h2>Add a new Pet</h2>
+
+<p id="error">{{message}}</p>
+
+
+<div id="newform">
+  <form (submit)="onSubmit()">
+
+    <table>
+      <tr>
+        <th>Pet Name:</th>
+        <td><input type="text" name="newPet.name" [(ngModel)]="newPet.name" /></td>
+      </tr>
+      <tr>
+        <th>Pet Type:</th>
+        <td><input type="text" name="newPet.type" [(ngModel)]="newPet.type" /></td>
+      </tr>
+      <tr>
+        <th>Description:</th>
+        <td><input type="text" name="newPet.description" [(ngModel)]="newPet.description" /></td>
+      </tr>
+      <tr>
+        <th>Add skills 1:</th>
+        <td><input type="text" name="newPet.skill1" [(ngModel)]="newPet.skill1" /></td>
+      </tr>
+      <tr>
+        <th>Add skills 2:</th>
+        <td><input type="text" name="newPet.skill2" [(ngModel)]="newPet.skill2" /></td>
+      </tr>
+      <tr>
+        <th>Add skills 3:</th>
+        <td><input type="text" name="newPet.skill3" [(ngModel)]="newPet.skill3" /></td>
+      </tr>
+
+      <tr>
+        <td><button [routerLink]="['']">Cancel</button> </td>
+        <td><input type="submit" value="Add New Pet" /></td>
+      </tr>
+    </table>
+
+
+  </form>
+</div>

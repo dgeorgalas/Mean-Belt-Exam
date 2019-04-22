@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th> 
+    <th>Actions</th> 
+  </tr>
+    <tr *ngFor="let pet of pets">
+    <td>{{pet.name}}</td>
+    <td>{{pet.type}}</td>
+    <td><button [routerLink]="['/detail/', pet._id]">Details</button> - <button [routerLink]="['/edit/', pet._id]">Edit</button></td> 
+  </tr>
+ 
+</table>  
